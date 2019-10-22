@@ -33,7 +33,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.cnn">
     <configuration name="cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,9 +126,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cnn" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.convert" />
-        <item itemvalue="Python.cnn" />
         <item itemvalue="Python.origin" />
       </list>
     </recent_temporary>
