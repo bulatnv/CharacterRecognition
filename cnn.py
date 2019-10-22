@@ -53,10 +53,11 @@ cells = cells[:, :, :, None]
 # cv2.waitKey()
 # print(len(cells))
 
-k = np.arange(34)
-cells_labels = np.repeat(k, 24)
-cells_labels = np.repeat(cells_labels, 5)
-test_cells_labels = np.arange(34)
+k_labels = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ь', 'Ы', 'Ъ', 'Э', 'Ю', 'Я']
+k = range(33)
+cells_labels = np.repeat(k, 25)
+labels = np.concatenate((cells_labels, cells_labels, cells_labels, cells_labels, cells_labels), axis=None)
+test_cells_labels = range(33)
 
 # Test data preparation
 test_cells = prepare_test_data("test_letters.png")  # test_letters2.BMP

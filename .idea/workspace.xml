@@ -16,6 +16,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1SYbRBIa9vMbpLf83ByH637UHB8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ReallyAIProjects" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -32,7 +33,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.convert">
+  <component name="RunManager" selected="Python.main">
     <configuration name="cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -125,8 +126,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.convert" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.convert" />
         <item itemvalue="Python.cnn" />
         <item itemvalue="Python.origin" />
       </list>
