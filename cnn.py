@@ -41,11 +41,11 @@ def prepare_test_data(frame):
 
 # processing images
 cells = []
-cells1 = process_frame("201.png")
-cells2 = process_frame("201.png")
-cells3 = process_frame("201.png")
-cells4 = process_frame("201.png")
-cells5 = process_frame("201.png")
+cells1 = process_frame("data/201.png")
+cells2 = process_frame("data/201.png")
+cells3 = process_frame("data/201.png")
+cells4 = process_frame("data/201.png")
+cells5 = process_frame("data/201.png")
 cells = np.concatenate((cells1, cells2, cells3, cells4, cells5), axis=0)
 cells = cells[:, :, :, None]
 # print(cells.shape)
@@ -55,14 +55,15 @@ cells = cells[:, :, :, None]
 # print(len(cells))
 
 # Creating labels
-k_labels = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У', 'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ь', 'Ы', 'Ъ', 'Э', 'Ю', 'Я']
+k_labels = ['А', 'Б', 'В', 'Г', 'Д', 'Е', 'Ё', 'Ж', 'З', 'И', 'Й', 'К', 'Л', 'М', 'Н', 'О', 'П', 'Р', 'С', 'Т', 'У',
+            'Ф', 'Х', 'Ц', 'Ч', 'Ш', 'Щ', 'Ь', 'Ы', 'Ъ', 'Э', 'Ю', 'Я']
 k = range(33)
 cells_labels = np.repeat(k, 25)
 labels = np.concatenate((cells_labels, cells_labels, cells_labels, cells_labels, cells_labels), axis=None)
 
 
 # Test data preparation
-test_cells = prepare_test_data("test.png")  # test_letters2.BMP
+test_cells = prepare_test_data("data/test.png")  # test_letters2.BMP
 test_cells = test_cells[:, :, :, None]
 test_cells_labels = np.arange(33)
 # print(test_cells.shape)
@@ -86,7 +87,7 @@ model1.summary()
 model1.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
-model1.fit(cells, labels, shuffle=True, epochs=3)
+model1.fit(cells, labels, shuffle=True, epochs=8)
 
 test_loss, test_acc = model1.evaluate(test_cells, test_cells_labels)
 

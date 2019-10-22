@@ -36,11 +36,11 @@ def prepare_test_data(frame):
 
 
 cells = []
-cells1 = process_frame("201.png")
-cells2 = process_frame("201.png")
-cells3 = process_frame("201.png")
-cells4 = process_frame("201.png")
-cells5 = process_frame("201.png")
+cells1 = process_frame("data/201.png")
+cells2 = process_frame("data/201.png")
+cells3 = process_frame("data/201.png")
+cells4 = process_frame("data/201.png")
+cells5 = process_frame("data/201.png")
 cells = np.concatenate((cells1, cells2, cells3, cells4, cells5), axis=0)
 
 
@@ -59,7 +59,7 @@ labels = np.concatenate((cells_labels, cells_labels, cells_labels, cells_labels,
 #     cv2.waitKey()
 
 # Test data preparation
-test_cells = prepare_test_data("test.png")
+test_cells = prepare_test_data("data/test.png")
 
 # KNN
 knn = cv2.ml.KNearest_create()
@@ -67,3 +67,5 @@ knn.train(cells, cv2.ml.ROW_SAMPLE, labels)
 ret, result, neighbours, dist = knn.findNearest(test_cells, k=3)
 
 print(result)
+print("label: ", k_labels[15])
+print("label: ", k_labels[32])
