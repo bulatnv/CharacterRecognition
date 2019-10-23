@@ -15,6 +15,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1SYbRBIa9vMbpLf83ByH637UHB8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -33,7 +36,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnn">
+  <component name="RunManager" selected="Python.main">
     <configuration name="cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,8 +129,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cnn" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.cnn" />
         <item itemvalue="Python.convert" />
         <item itemvalue="Python.origin" />
       </list>
