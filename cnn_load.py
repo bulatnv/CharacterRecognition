@@ -1,16 +1,9 @@
-from keras.models import load_model
-print(11)
 from sklearn.metrics import accuracy_score
-print(12)
 import numpy as np
-print(13)
 import cv2
-from tensorflow.keras import layers, models
 import tensorflow as tf
-print(1)
 
-model = load_model('my_model.h5')
-print(21)
+model = tf.keras.models.load_model('my_model.h5')
 model.summary()
 
 def crop_frame(frame, height, width, density):
@@ -25,13 +18,13 @@ def prepare_test_data(frame):
         # d = d.flatten()
         test_cells.append(d)
     return np.array(test_cells, dtype=np.float32)
-print(2)
+
 # Test data preparation
 test_cells = prepare_test_data("data/test.png")  # test_letters2.BMP
 test_cells = test_cells[:, :, :, None]
 test_cells_labels = np.arange(33)
 # print(test_cells.shape)
-print(3)
+
 # Normalization
 test_cells = test_cells / 255.0
 

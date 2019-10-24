@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7afba77e-a92e-492d-aca2-e40eaa087876" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cnn_load.py" afterDir="false" />
+    <list default="true" id="7afba77e-a92e-492d-aca2-e40eaa087876" name="Default Changelist" comment="Пока не знаю, что я вообще делаю, но пытаюсь сохранить модель">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_load.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_load.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/my_model.h5" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cnn">
+  <component name="RunManager" selected="Python.cnn_load">
     <configuration name="cnn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="kNN" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -155,8 +156,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.cnn" />
         <item itemvalue="Python.cnn_load" />
+        <item itemvalue="Python.cnn" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.convert" />
         <item itemvalue="Python.origin" />
