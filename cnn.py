@@ -68,10 +68,10 @@ test_cells = test_cells[:, :, :, None]
 test_cells_labels = np.arange(33)
 # print(test_cells.shape)
 
-## Normalization
+# Normalization
 cells, test_cells = cells / 255.0, test_cells / 255.0
 
-#CNN
+# CNN
 model1 = models.Sequential()
 model1.add(layers.Conv2D(32, (3, 3), activation='relu', input_shape=(50, 50, 1)))
 model1.add(layers.MaxPooling2D((2, 2)))
@@ -87,10 +87,9 @@ model1.summary()
 model1.compile(optimizer='adam',
               loss='sparse_categorical_crossentropy',
               metrics=['accuracy'])
-model1.fit(cells, labels, shuffle=True, epochs=8)
+model1.fit(cells, labels, shuffle=True, epochs=5)
 
 test_loss, test_acc = model1.evaluate(test_cells, test_cells_labels)
-
 print(test_acc, "Accuracy")
 result = model1.predict(test_cells)
 print(np.argmax(result, axis=1))
