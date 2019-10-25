@@ -91,6 +91,10 @@ model1.fit(cells, labels, shuffle=True, epochs=5)
 model1.save('my_model.h5')
 
 test_loss, test_acc = model1.evaluate(test_cells, test_cells_labels)
+
+np.savetxt('X_train.txt', cells, fmt='%d')
+np.savetxt('y_train.txt', labels, fmt='%d')
+
 print(test_acc, "Accuracy")
 result = model1.predict(test_cells)
 print(np.argmax(result, axis=1))
