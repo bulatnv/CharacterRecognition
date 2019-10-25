@@ -1,4 +1,5 @@
 # import the necessary packages
+import os
 from imutils.perspective import four_point_transform
 from imutils import contours
 import numpy as np
@@ -46,31 +47,49 @@ def crop_by_edges(frame):
     # apply a four point perspective transform to both the
     # original image and grayscale image to obtain a top-down
     # birds eye view of the paper
-    return four_point_transform(image, docCnt.reshape(4, 2))
+    return four_point_transform(frame, docCnt.reshape(4, 2))
 
 
-# define the answer key which maps the question number
-# to the correct answer
-KEYs = {}
+def rename_imgs():
+    dir_path = 'dataset_raw'
+    img_names = os.listdir(dir_path)
+    for old_name, i in zip(img_names, range(len(img_names))):
+        os.rename(os.path.join(dir_path, old_name), os.path.join(dir_path, '{0}.bmp'.format(i)))
 
-# load the image, convert it to grayscale, blur it
-# slightly, then find edges
-filePath = "test/"
-fileName = "400"
-fileType = ".png"
-# for i in range(1, 6):
-# file = filePath + fileName + str(i) + fileType
-image = cv2.imread(filePath+fileName+fileType)
 
-paper = crop_by_edges(image)
-grayImage = cv2.cvtColor(paper, cv2.COLOR_BGR2GRAY)
+def proccess_all_images_in_folder():
+    rename_imgs()
+    filePath = "dataset_raw/"
+    fileType = ".bmp"
 
-# apply Otsu's thresholding method to binarize the warped
-# piece of paper
-thresh = cv2.threshold(grayImage, 0, 255,
-                       cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
+    for i in range(77):
+        file = filePath + str(i) + fileType
+        image = cv2.imread(file)
 
-cv2.imshow("Result color", rescale_frame(paper))
-cv2.imshow("Result grey", rescale_frame(thresh))
-cv2.imwrite(filePath + fileName + "_black" + fileType, thresh)
-cv2.waitKey(0)
+        paper = crop_by_edges(image)
+        grayImage = cv2.cvtColor(paper, cv2.COLOR_BGR2GRAY)
+
+        thresh = cv2.threshold(grayImage, 0, 255,
+                               cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
+
+        cv2.imwrite(filePath + "processed" + str(i) + fileType, thresh)
+
+
+def proccess_image_in_folder(name):
+    filePath = "dataset_raw/"
+    fileType = ".bmp"
+
+    file = filePath + str(name) + fileType
+    print(file)
+    image = cv2.imread(file)
+
+    paper = crop_by_edges(image)
+    grayImage = cv2.cvtColor(paper, cv2.COLOR_BGR2GRAY)
+
+    thresh = cv2.threshold(grayImage, 0, 255,
+                           cv2.THRESH_BINARY_INV | cv2.THRESH_OTSU)[1]
+
+    cv2.imwrite(filePath + "processed" + str(name) + fileType, thresh)
+
+
+proccess_all_images_in_folder()

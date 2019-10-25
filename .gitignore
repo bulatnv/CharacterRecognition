@@ -1,3 +1,6 @@
+# our folder to ignore
+dataset_raw/
+
 # Byte-compiled / optimized / DLL files
 /__pycache__/
 __pycache__/core.cpython-37.pyc
