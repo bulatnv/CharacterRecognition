@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7afba77e-a92e-492d-aca2-e40eaa087876" name="Default Changelist" comment="Пока не знаю, что я вообще делаю, но пытаюсь сохранить модель">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_load_inference.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_load_inference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cnn_train_save.py" beforeDir="false" afterPath="$PROJECT_DIR$/cnn_train_save.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/convert.py" beforeDir="false" afterPath="$PROJECT_DIR$/convert.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/my_model.h5" beforeDir="false" afterPath="$PROJECT_DIR$/my_model.h5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rename_img.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -199,5 +204,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Пока не знаю, что я вообще делаю, но пытаюсь сохранить модель" />
     <option name="LAST_COMMIT_MESSAGE" value="Пока не знаю, что я вообще делаю, но пытаюсь сохранить модель" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
