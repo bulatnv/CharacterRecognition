@@ -61,7 +61,6 @@ k = range(33)
 cells_labels = np.repeat(k, 25)
 labels = np.concatenate((cells_labels, cells_labels, cells_labels, cells_labels, cells_labels), axis=None)
 
-
 # Test data preparation
 test_cells = prepare_test_data("data/test.png")  # test_letters2.BMP
 test_cells = test_cells[:, :, :, None]
@@ -85,8 +84,8 @@ model1.add(layers.Dense(34, activation='softmax'))
 model1.summary()
 
 model1.compile(optimizer='adam',
-              loss='sparse_categorical_crossentropy',
-              metrics=['accuracy'])
+               loss='sparse_categorical_crossentropy',
+               metrics=['accuracy'])
 model1.fit(cells, labels, shuffle=True, epochs=5)
 
 model1.save('my_model.h5')
