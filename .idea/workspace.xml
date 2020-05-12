@@ -134,10 +134,10 @@
     </configuration>
     <list>
       <item itemvalue="Python.cnn" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.origin" />
       <item itemvalue="Python.convert" />
       <item itemvalue="Python.core" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.origin" />
     </list>
     <recent_temporary>
       <list>
@@ -175,22 +175,22 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="474" height="828" key="GridCell.Tab.0.bottom" timestamp="1589265471762">
+    <state width="504" height="828" key="GridCell.Tab.0.bottom" timestamp="1589266615724">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="474" height="828" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1589265471762" />
-    <state width="474" height="828" key="GridCell.Tab.0.center" timestamp="1589265471762">
+    <state width="504" height="828" key="GridCell.Tab.0.bottom/0.27.1920.988@0.27.1920.988" timestamp="1589266615724" />
+    <state width="504" height="828" key="GridCell.Tab.0.center" timestamp="1589266615722">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="474" height="828" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1589265471762" />
-    <state width="474" height="828" key="GridCell.Tab.0.left" timestamp="1589265471761">
+    <state width="504" height="828" key="GridCell.Tab.0.center/0.27.1920.988@0.27.1920.988" timestamp="1589266615722" />
+    <state width="504" height="828" key="GridCell.Tab.0.left" timestamp="1589266615722">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="474" height="828" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1589265471761" />
-    <state width="474" height="828" key="GridCell.Tab.0.right" timestamp="1589265471762">
+    <state width="504" height="828" key="GridCell.Tab.0.left/0.27.1920.988@0.27.1920.988" timestamp="1589266615722" />
+    <state width="504" height="828" key="GridCell.Tab.0.right" timestamp="1589266615723">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
-    <state width="474" height="828" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1589265471762" />
+    <state width="504" height="828" key="GridCell.Tab.0.right/0.27.1920.988@0.27.1920.988" timestamp="1589266615723" />
     <state x="324" y="92" width="1022" height="737" key="SettingsEditor" timestamp="1589265872022">
       <screen x="0" y="27" width="1920" height="988" />
     </state>
